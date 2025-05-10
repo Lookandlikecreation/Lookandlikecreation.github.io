@@ -11,7 +11,7 @@ const serviceDetails = {
                         <li>Basic transitions and effects</li>
                         <li>Music and sound effects</li>
                     </ul>
-                    <p class="price">Starting at ₹800</p>
+                    <p class="price">Custom pricing based on requirements</p>
                 </div>
                 <div class="service-package">
                     <h3>Long Form Editing</h3>
@@ -45,7 +45,7 @@ const serviceDetails = {
                         <li>Basic setup and equipment</li>
                         <li>Professional lighting</li>
                     </ul>
-                    <p class="price">Starting at ₹1,000</p>
+                    <p class="price">Custom pricing based on requirements</p>
                 </div>
                 <div class="service-package">
                     <h3>Full Shoot</h3>
@@ -72,7 +72,7 @@ const serviceDetails = {
                         <li>Engaging captions</li>
                         <li>Basic hashtag research</li>
                     </ul>
-                    <p class="price">₹2,500/week</p>
+                    <p class="price">Custom pricing based on requirements</p>
                 </div>
                 <div class="service-package">
                     <h3>Growth Plan</h3>
@@ -83,7 +83,7 @@ const serviceDetails = {
                         <li>Advanced hashtag strategy</li>
                         <li>Performance analytics</li>
                     </ul>
-                    <p class="price">₹8,000/month</p>
+                    <p class="price">Custom pricing based on requirements</p>
                 </div>
             </div>
         `
@@ -118,7 +118,7 @@ const serviceDetails = {
                         <li>Color palette</li>
                         <li>Brand guidelines</li>
                     </ul>
-                    <p class="price">Starting at ₹3,000</p>
+                    <p class="price">Custom pricing based on requirements</p>
                 </div>
             </div>
         `
@@ -135,7 +135,7 @@ const serviceDetails = {
                         <li>Basic contact form</li>
                         <li>Mobile responsive</li>
                     </ul>
-                    <p class="price">Starting at ₹5,000</p>
+                    <p class="price">Custom pricing based on requirements</p>
                 </div>
                 <div class="service-package">
                     <h3>Standard Websites</h3>
@@ -145,7 +145,7 @@ const serviceDetails = {
                         <li>Image galleries</li>
                         <li>SEO optimization</li>
                     </ul>
-                    <p class="price">Starting at ₹10,000</p>
+                    <p class="price">Custom pricing based on requirements</p>
                 </div>
                 <div class="service-package">
                     <h3>Blog/Portfolio Websites</h3>
@@ -179,11 +179,33 @@ function initTheme() {
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
     });
 }
+
+// Highlight active nav link on scroll
+function highlightActiveNav() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+        }
+    });
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+            link.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', highlightActiveNav);
+document.addEventListener('DOMContentLoaded', highlightActiveNav);
 
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
@@ -311,44 +333,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Navigation functionality
+    // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
-    const navLinksItems = document.querySelectorAll('.nav-link');
 
-    // Toggle menu on button click
-    mobileMenuBtn.addEventListener('click', function() {
-        this.classList.toggle('active');
+    mobileMenuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
     });
 
-    // Close menu when clicking on a link
-    navLinksItems.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenuBtn.classList.remove('active');
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navbar')) {
             navLinks.classList.remove('active');
-            document.body.classList.remove('menu-open');
+        }
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
         });
     });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.nav-links') &&
-            !event.target.closest('.mobile-menu-btn') &&
-            navLinks.classList.contains('active')) {
-            mobileMenuBtn.classList.remove('active');
-            navLinks.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
-    });
-
-    // Prevent body scroll when menu is open
-    document.body.addEventListener('touchmove', function(e) {
-        if (document.body.classList.contains('menu-open')) {
-            e.preventDefault();
-        }
-    }, { passive: false });
 
     // Scroll effect for navigation
     window.addEventListener('scroll', function() {

@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LLC - Media & Digital Services is a creative agency that provides professional media production and digital services for startups and creators.">
+    <meta name="keywords" content="LLC, Media, Digital, Services, Video Editing, Videography, Social Media, Canva Design, Website Design, Creative Solutions, Startups, Creators">
+    <meta name="author" content="LLC - Media & Digital Services">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
     <title>LLC - Media & Digital Services</title>
+    <link rel="canonical" href="https://www.lookandlikecreation.in">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./Logo.jpg">
+    <link rel="icon" href="Logo.jpg">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <span class="logo-text">LLC</span>
-                <span class="logo-subtext">Media & Digital Services</span>
-            </a>
-            <div class="nav-right">
-                <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                    
-
-                </button>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo" aria-label="LLC Home">LLC</a>
                 <div class="nav-links">
-                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                     <a href="#services" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#contact" class="nav-link">Contact</a>
-                    <a href="#contact" class="nav-cta">Get Started</a>
                 </div>
-                <button class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
-                    <i class="fas fa-sun light-icon"></i>
-                    <i class="fas fa-moon dark-icon"></i>
+
+                <button class="mobile-menu-btn" aria-label="Open navigation menu">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
@@ -59,15 +61,15 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number" data-count="100">0</span>+
+                        <span class="stat-number" data-count="100">7</span>+
                         <span class="stat-label">Projects Completed</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-count="50">0</span>+
+                        <span class="stat-number" data-count="50">7</span>+
                         <span class="stat-label">Happy Clients</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-count="2">0</span>+
+                        <span class="stat-number" data-count="2">1</span>+
                         <span class="stat-label">Years Experience</span>
                     </div>
                 </div>
@@ -83,7 +85,6 @@
     <section id="services">
         <div class="container">
             <div class="section-header">
-
                 <h2 class="section-title">Our Services</h2>
                 <p class="section-description">Professional digital solutions tailored to your needs</p>
             </div>
@@ -172,19 +173,16 @@
     <section id="about">
         <div class="container">
             <div class="section-header">
-
                 <h2 class="section-title">About Us</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <div class="about-description">
                         <p class="lead-text">At LLC - Media & Digital Services</p>
-
                         <p>Our team of creative professionals is dedicated to delivering high-quality, affordable services tailored to your specific needs. Whether you're a startup looking to establish your brand or a creator wanting to elevate your content,
                             we provide the tools and expertise to help you succeed in the digital landscape.</p>
                     </div>
-
-                    <div class="about-features">
+                    <div class="about-features" style="display:grid;gap:1.5rem;margin-top:1rem;">
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-check-circle"></i>
@@ -213,17 +211,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="about-cta">
-                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                        <a href="#services" class="btn btn-primary">Our Services</a>
-                    </div>
                 </div>
-
                 <div class="about-media">
                     <div class="about-image-container">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Creative workspace" class="about-image main-image">
-
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Creative workspace with digital tools and team collaboration" class="about-image main-image">
                     </div>
                     <div class="about-stats">
                         <div class="stat-item">
@@ -240,14 +231,80 @@
         </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-description">A showcase of our recent work</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <img src="./assests/images/clients/ecy.png" alt="Branding project" class="portfolio-image">
+                    <h3 class="portfolio-title">Easy Connect You</h3>
+                    <p class="portfolio-desc">Made a website for a startup called Easy Connect You.</p>
+                    <a href="https://easyconnectinsurance.github.io/" class="portfolio-link" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio-card">
+                    <img src="./assests/images/clients/hh.png" alt="Event video project" class="portfolio-image">
+                    <h3 class="portfolio-title">Hindustan Hardware</h3>
+                    <p class="portfolio-desc">Made a website for a business called Hindustan Hardware.</p>
+                    <a href="https://www.hindustanhardware.in/" class="portfolio-link" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio-card">
+                    <img src="./assests/images/clients/ht.png" alt="Social media campaign" class="portfolio-image">
+                    <h3 class="portfolio-title">Hindustan Timber</h3>
+                    <p class="portfolio-desc">Made a website for a business called Hindustan Timber.</p>
+                    <a href="https://www.hindustantimber.in/" class="portfolio-link" target="_blank">View Project</a>
+                </div>
+
+            </div>
+            <div style="text-align:center;margin-top:1.5rem;">
+                <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <p class="section-description">Insights, tips, and updates from our team</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <h3 class="blog-title">How to Build a Strong Digital Brand in 2024</h3>
+                    <time class="blog-date" datetime="2024-05-01">May 1, 2024</time>
+                    <p class="blog-excerpt">Discover the essential steps to create a memorable and effective digital brand for your business or personal project.</p>
+                    <a href="#" class="blog-readmore">Read More</a>
+                </article>
+                <article class="blog-card">
+                    <h3 class="blog-title">Top 5 Video Marketing Trends</h3>
+                    <time class="blog-date" datetime="2024-04-15">April 15, 2024</time>
+                    <p class="blog-excerpt">Stay ahead of the curve with these must-know trends in video marketing for startups and creators.</p>
+                    <a href="#" class="blog-readmore">Read More</a>
+                </article>
+                <article class="blog-card">
+                    <h3 class="blog-title">Why Social Media Management Matters</h3>
+                    <time class="blog-date" datetime="2024-03-28">March 28, 2024</time>
+                    <p class="blog-excerpt">Learn how professional social media management can boost your brand's reach and engagement.</p>
+                    <a href="#" class="blog-readmore">Read More</a>
+                </article>
+            </div>
+            <div style="text-align:center;margin-top:1.5rem;">
+                <a href="blog.html" class="btn btn-primary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" style="background-color: #1e1e1e;">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get in Touch</h2>
-                <p class="section-description">Ready to start your project? Reach out to us through any of these channels</p>
+                <p class="section-description">Ready to start your project? Reach out to us through any of these channels or send us a message directly.</p>
             </div>
-
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-icon">
@@ -257,7 +314,6 @@
                     <p>Quick responses within 24 hours</p>
                     <a href="https://wa.me/919898610793" class="contact-link" target="_blank">+91 9898610793</a>
                 </div>
-
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fab fa-instagram"></i>
@@ -266,7 +322,6 @@
                     <p>Follow our latest work</p>
                     <a href="https://instagram.com/lookandlikecreation" class="contact-link" target="_blank">@lookandlikecreation</a>
                 </div>
-
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fab fa-linkedin"></i>
@@ -275,16 +330,14 @@
                     <p>Connect professionally</p>
                     <a href="https://www.linkedin.com/company/lookandlikecreation" class="contact-link" target="_blank">Look and Like Creation</a>
                 </div>
-
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3>Phone</h3>
                     <p>Available Mon-Fri, 9am-6pm</p>
-                    <a href="tel:+919898610793" class="contact-link">+91 9898610793</a>
+                    <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
                 </div>
-
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
@@ -294,7 +347,6 @@
                     <a href="mailto:lookandlikecreation@gmail.com" class="contact-link">lookandlikecreation@gmail.com</a>
                 </div>
             </div>
-
             <div class="contact-cta">
                 <p>Prefer to meet in person?</p>
                 <div class="contact-address">
