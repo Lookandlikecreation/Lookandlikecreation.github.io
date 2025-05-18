@@ -231,9 +231,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close modal when clicking the close button
-    closeModal.addEventListener('click', function() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
+    document.querySelectorAll('.close-modal').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const modal = btn.closest('.modal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
     });
 
     // Close modal when clicking outside the modal content
