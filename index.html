@@ -7,6 +7,11 @@
     <meta name="description" content="Look And Like Creation is a creative agency that provides professional media production and digital services for startups and creators.">
     <meta name="keywords" content="Look And Like Creation, Media, Digital, Services, Video Editing, Videography, Social Media, Canva Design, Website Design, Creative Solutions, Startups, Creators">
     <meta name="author" content="Look And Like Creation">
+    <meta name="google-site-verification" content="G-G3ZRVM4V7J">
+    <meta name="geo.region" content="IN-GJ">
+    <meta name="geo.placename" content="Vadodara">
+    <meta name="geo.position" content="22.3072;73.1812">
+    <meta name="ICBM" content="22.3072, 73.1812">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
@@ -55,6 +60,33 @@
             ]
         }
     </script>
+    <!-- SEO Schema: BreadcrumbList and Sitelinks Searchbox added for enhanced Google sitelinks. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lookandlikecreation.in/"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.lookandlikecreation.in/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.lookandlikecreation.in/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -68,7 +100,6 @@
                     <a href="products.html" class="nav-link">Products</a>
                     <a href="services.html" class="nav-link">Services</a>
                     <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    <a href="blog.html" class="nav-link">Blog</a>
                     <a href="about.html" class="nav-link">About</a>
                     <a href="contact.html" class="nav-link">Contact</a>
                 </div>
@@ -80,6 +111,11 @@
         </div>
     </nav>
 
+    <!-- SEO & Accessibility Improvements: 
+    1. All image alt attributes are now descriptive.
+    2. Contextual internal links added between sections.
+    3. Heading structure is logical (one h1, h2 for sections, h3 for subsections).
+    4. For page speed: Compress all images (use TinyPNG/Squoosh or convert to WebP), minify styles.css (use cssnano or online tool), and enable browser caching for static assets on your server. -->
     <!-- Home Section -->
     <section id="home">
         <div class="home-background">
@@ -89,7 +125,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="animate-text">Creative Digital Solutions for Startups & Creators</h1>
+                    <h1 class="animate-text">Creative Digital Solutions for Startups &amp; Creators</h1>
                     <meta name="description" content="We help businesses and creators bring their vision to life through professional media production and digital services.">
                     <p class="animate-text delay-1">We help businesses and creators bring their vision to life through professional media production and digital services.</p>
                     <div class="cta-buttons animate-text delay-2">
@@ -170,7 +206,7 @@
                     <div class="service-icon">
                         <i class="fas fa-palette"></i>
                     </div>
-                    <h3>Canva Design</h3>
+                    <h3>Personalized Design</h3>
                     <p>Professional design services for flyers, social media posts, and branding materials.</p>
                     <div class="service-features">
                         <span>Social Media Posts</span>
@@ -183,12 +219,27 @@
                     <div class="service-icon">
                         <i class="fas fa-laptop"></i>
                     </div>
-                    <h3>Website Design</h3>
+                    <h3>Website Development</h3>
                     <p>Custom website development using Wix, WordPress, or Google Sites to showcase your brand.</p>
                     <div class="service-features">
                         <span>Wix Development</span>
                         <span>WordPress</span>
                         <span>Google Sites</span>
+                        <span>Custom Development</span>
+                    </div>
+                    <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="app-development">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>App Development</h3>
+                    <p>Custom app development using Android, IOS, or Web to showcase your brand.</p>
+                    <div class="service-features">
+                        <span>Android</span>
+                        <span>IOS</span>
+                        <span>Web</span>
+                        <span>Custom Development</span>
                     </div>
                     <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -216,9 +267,8 @@
             <div class="about-content">
                 <div class="about-text">
                     <div class="about-description">
-                        <p class="lead-text">At LLC - Media & Digital Services</p>
-                        <p>Our team of creative professionals is dedicated to delivering high-quality, affordable services tailored to your specific needs. Whether you're a startup looking to establish your brand or a creator wanting to elevate your content,
-                            we provide the tools and expertise to help you succeed in the digital landscape.</p>
+                        <p class="lead-text">At LLC - Media &amp; Digital Services</p>
+                        <p>Our team of creative professionals is dedicated to delivering high-quality, affordable services tailored to your specific needs. Whether you're a startup looking to establish your brand or a creator wanting to elevate your content, we provide the tools and expertise to help you succeed in the digital landscape. <a href="#services" class="internal-link">See our services</a>.</p>
                     </div>
                     <div class="about-features" style="display:grid;gap:1.5rem;margin-top:1rem;">
                         <div class="feature-item">
@@ -226,7 +276,7 @@
                                 <i class="fas fa-check-circle"></i>
                             </div>
                             <div class="feature-text">
-                                <h4>Professional Quality</h4>
+                                <h3>Professional Quality</h3>
                                 <p>High-end production value at affordable rates</p>
                             </div>
                         </div>
@@ -235,7 +285,7 @@
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div class="feature-text">
-                                <h4>Quick Turnaround</h4>
+                                <h3>Quick Turnaround</h3>
                                 <p>Fast delivery without compromising quality</p>
                             </div>
                         </div>
@@ -244,7 +294,7 @@
                                 <i class="fas fa-users"></i>
                             </div>
                             <div class="feature-text">
-                                <h4>Dedicated Support</h4>
+                                <h3>Dedicated Support</h3>
                                 <p>Personal attention to every project</p>
                             </div>
                         </div>
@@ -252,7 +302,7 @@
                 </div>
                 <div class="about-media">
                     <div class="about-image-container">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Creative workspace with digital tools and team collaboration" class="about-image main-image" loading="lazy" width="800" height="533">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Creative workspace with digital tools and team collaboration at Look And Like Creation" class="about-image main-image" loading="lazy" width="800" height="533">
                     </div>
                     <!-- <div class="about-stats">
                         <div class="stat-item">
@@ -278,63 +328,31 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-card">
-                    <img src="./assests/images/clients/ecy.png" alt="Branding project" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <img src="./assests/images/clients/ecy.png" alt="Easy Connect You website screenshot by Look And Like Creation" class="portfolio-image" loading="lazy" width="400" height="300">
                     <h3 class="portfolio-title">Easy Connect You</h3>
                     <p class="portfolio-desc">Made a website for a startup called Easy Connect You.</p>
                     <a href="https://easyconnectinsurance.github.io/" class="portfolio-link" target="_blank">View Project</a>
                 </div>
                 <div class="portfolio-card">
-                    <img src="./assests/images/clients/hh.png" alt="Event video project" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <img src="./assests/images/clients/hh.png" alt="Hindustan Hardware website screenshot by Look And Like Creation" class="portfolio-image" loading="lazy" width="400" height="300">
                     <h3 class="portfolio-title">Hindustan Hardware</h3>
                     <p class="portfolio-desc">Made a website for a business called Hindustan Hardware.</p>
                     <a href="https://www.hindustanhardware.in/" class="portfolio-link" target="_blank">View Project</a>
                 </div>
                 <div class="portfolio-card">
-                    <img src="./assests/images/clients/ht.png" alt="Social media campaign" class="portfolio-image" loading="lazy" width="400" height="300">
+                    <img src="./assests/images/clients/ht.png" alt="Hindustan Timber website screenshot by Look And Like Creation" class="portfolio-image" loading="lazy" width="400" height="300">
                     <h3 class="portfolio-title">Hindustan Timber</h3>
                     <p class="portfolio-desc">Made a website for a business called Hindustan Timber.</p>
                     <a href="https://www.hindustantimber.in/" class="portfolio-link" target="_blank">View Project</a>
                 </div>
-
             </div>
             <div style="text-align:center;margin-top:1.5rem;">
                 <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+                <a href="#contact" class="btn btn-primary" style="margin-left:1rem;">Contact us about a project</a>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Latest Blog Posts</h2>
-                <p class="section-description">Insights, tips, and updates from our team</p>
-            </div>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <h3 class="blog-title">How to Build a Strong Digital Brand in 2024</h3>
-                    <time class="blog-date" datetime="2024-05-01">May 1, 2024</time>
-                    <p class="blog-excerpt">Discover the essential steps to create a memorable and effective digital brand for your business or personal project.</p>
-                    <a href="#" class="blog-readmore">Read More</a>
-                </article>
-                <article class="blog-card">
-                    <h3 class="blog-title">Top 5 Video Marketing Trends</h3>
-                    <time class="blog-date" datetime="2024-04-15">April 15, 2024</time>
-                    <p class="blog-excerpt">Stay ahead of the curve with these must-know trends in video marketing for startups and creators.</p>
-                    <a href="#" class="blog-readmore">Read More</a>
-                </article>
-                <article class="blog-card">
-                    <h3 class="blog-title">Why Social Media Management Matters</h3>
-                    <time class="blog-date" datetime="2024-03-28">March 28, 2024</time>
-                    <p class="blog-excerpt">Learn how professional social media management can boost your brand's reach and engagement.</p>
-                    <a href="#" class="blog-readmore">Read More</a>
-                </article>
-            </div>
-            <div style="text-align:center;margin-top:1.5rem;">
-                <a href="blog.html" class="btn btn-primary">View All Posts</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" style="background-color: #1e1e1e;">
@@ -374,7 +392,7 @@
                     </div>
                     <h3>Phone</h3>
                     <p>Available Mon-Fri, 9am-6pm</p>
-                    <a href="tel:+919898610793" class="contact-link">+91-9898610793</a>
+                    <a href="tel:+919898610793" class="contact-link">+91 9898610793</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">

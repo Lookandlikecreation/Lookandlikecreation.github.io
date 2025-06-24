@@ -159,6 +159,42 @@ const serviceDetails = {
                 </div>
             </div>
         `
+    },
+    'app-development': {
+        title: 'App Development Services',
+        content: `
+            <div class="service-details">
+                <div class="service-package">
+                    <h3>Android App Development</h3>
+                    <ul>
+                        <li>Custom app development</li>
+                        <li>UI/UX design</li>
+                        <li>Performance optimization</li>
+                        <li>App store submission</li>
+                    </ul>
+                    <p class="price">Custom pricing based on requirements</p>
+                </div>
+                <div class="service-package">
+                    <h3>IOS App Development</h3>
+                    <ul>
+                        <li>Custom app development</li>
+                        <li>UI/UX design</li>
+                        <li>Performance optimization</li>
+                        <li>App store submission</li>
+                    </ul>
+                    <p class="price">Custom pricing based on requirements</p>
+                </div>
+                <div class="service-package">
+                    <h3>Web App Development</h3>
+                    <ul>
+                        <li>Custom app development</li>
+                        <li>UI/UX design</li>
+                        <li>Performance optimization</li>
+                        <li>Deployment and Hosting</li>
+                    </ul>
+                    <p class="price">Custom pricing based on requirements</p>
+            </div>
+        `
     }
 };
 
